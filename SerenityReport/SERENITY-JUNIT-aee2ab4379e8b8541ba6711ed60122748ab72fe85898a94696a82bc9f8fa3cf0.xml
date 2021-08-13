@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="testcases.SearchWeather.TC_008_010" skipped="0" tests="1" time="31.45" timestamp="2021-08-13 01:32:17"><testcase classname="testcases.SearchWeather.TC_008_010" name="TC_008: Verify that the current weather data is returned correctly when user search for the City Name"/></testsuite>

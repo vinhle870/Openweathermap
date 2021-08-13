@@ -1,0 +1,202 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Openweathermap</groupId>
+  <artifactId>Openweathermap</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <build>
+     <pluginManagement>
+     <plugins>
+      <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>14</release>
+        </configuration>
+      </plugin>
+      
+       
+     <plugin>
+   <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.0.0-M5</version>
+    <configuration>
+    <groups>${testcase.groups}</groups>
+	<!-- Need include wildcard so that all test classes can be identified by Surefire plugin -->
+	<includes>
+		<include>**/*.java</include>
+	</includes>
+     	<parallel>methods</parallel>
+    	<threadCount>8</threadCount>
+    	<forkCount>1C</forkCount>
+    </configuration> 
+    <goals>
+       <goal>test</goal>
+     </goals>
+  </plugin>
+  
+  <plugin>
+    <groupId>net.serenity-bdd.maven.plugins</groupId>
+    <artifactId>serenity-maven-plugin</artifactId>
+    <version>2.3.2</version>
+    <executions>
+        <execution>
+            <id>serenity-reports</id>
+            <phase>post-integration-test</phase>
+            <goals>
+                <goal>aggregate</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
+ 
+  </plugins>
+  </pluginManagement>
+   </build>
+  
+  <!-- CREATE TEST CATETORIES FOR RUNNING AUTOMATION -->
+ 
+    <!-- END PROFILES -->
+  
+  <dependencies>
+   <!-- To add external Lib folder -->
+<dependency>
+    <groupId>com.sun.mail</groupId>
+    <artifactId>javax.mail</artifactId>
+    <version>1.6.2</version>
+</dependency>
+	
+<dependency>
+    <groupId>com.jcraft</groupId>
+    <artifactId>jsch</artifactId>
+    <version>0.1.55</version>
+</dependency>
+	
+	
+   <!-- Remote dependency-->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-math3</artifactId>
+      <version>3.6.1</version>
+      
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>3.141.59</version>
+      
+    </dependency>
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-contrib</artifactId>
+      <version>3.6</version>
+      
+    </dependency>
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <version>4.1.2</version>
+      
+    </dependency>
+  <dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>4.1.2</version>
+</dependency>
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-scratchpad</artifactId>
+      <version>4.1.2</version>
+     </dependency>
+    <dependency>
+      <groupId>org.apache.pdfbox</groupId>
+      <artifactId>pdfbox</artifactId>
+      <version>2.0.21</version>
+      
+    </dependency>
+    <!-- 
+    <dependency>
+      <groupId>net.serenity-bdd</groupId>
+      <artifactId>serenity-gradle-plugin</artifactId>
+      <version>2.3.4</version>
+      
+    </dependency>
+     -->
+     
+     <!-- https://mvnrepository.com/artifact/net.serenity-bdd.maven.plugins/serenity-maven-plugin -->
+<dependency>
+    <groupId>net.serenity-bdd.maven.plugins</groupId>
+    <artifactId>serenity-maven-plugin</artifactId>
+    <version>2.3.31</version>
+</dependency>
+     
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>28.2-jre</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.serenity-bdd</groupId>
+      <artifactId>serenity-core</artifactId>
+      <version>2.2.12</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+      <groupId>net.serenity-bdd</groupId>
+      <artifactId>serenity-junit</artifactId>
+      <version>2.2.12</version>
+       </dependency>
+       
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.7</version>
+      <scope>test</scope>
+     </dependency>
+  
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    
+<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.0.0-M5</version>
+</dependency>
+
+<!-- Read XML files -->
+<!-- https://mvnrepository.com/artifact/org.jdom/jdom -->
+<dependency>
+    <groupId>org.jdom</groupId>
+    <artifactId>jdom</artifactId>
+    <version>2.0.2</version>
+</dependency>
+
+<dependency>
+  <groupId>io.appium</groupId>
+  <artifactId>java-client</artifactId>
+  <version>7.5.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+<dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1.1</version>
+</dependency>
+
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.12.4</version>
+</dependency>
+
+  </dependencies>
+</project>

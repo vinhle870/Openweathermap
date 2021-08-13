@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="testcases.SearchWeather.TC_008_010" skipped="0" tests="1" time="125.92" timestamp="2021-08-13 02:40:18"><testcase classname="testcases.SearchWeather.TC_008_010" name="TC_010:Verify that the daily forecast data is returned correctly for the searched City Name"><failure message="Daily Forcast List must contain 7instead of 8].&#10;" type="java.lang.AssertionError">Daily Forcast List must contain 7instead of 8].
+</failure><system-err>Daily Forcast List must contain 7instead of 8].
+&#13;
+testcases.SearchWeather.TC_008_010.TC_010_Verify_DailyForCast_Is_Returned_For_ValidCity(TC_008_010.java:153)&#13;
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+</system-err></testcase></testsuite>

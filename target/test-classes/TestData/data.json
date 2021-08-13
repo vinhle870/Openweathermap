@@ -1,0 +1,21 @@
+{
+	"Locations":
+	[
+	{"value": "New York City, US",
+		"coordinates":{"lat":40.714,"lon":-74.006}
+	},
+	
+	{"value": "LonDon, GB",
+		"coordinates":{"lat":51.508,"lon":-0.126}
+	},
+	
+	{"value": "Los Angeles, US",
+		"coordinates":{"lat":34.052,"lon":-118.244}
+	},
+	
+	{"value": "Thành phố Hồ Chí Minh, VN",
+		"coordinates":{"lat":10.833,"lon":106.667}
+	}
+		
+	]
+}

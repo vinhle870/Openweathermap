@@ -1,0 +1,14 @@
+[
+	{
+	"caps":
+		{
+		"automationName": "UiAutomator2",
+		"platformName": "Android",
+		//"app": "",
+		"deviceName": "Galaxy Nexus API 30",
+		"platformVersion": "11.0",
+		"chromedriverChromeMappingFile": "C:\Users\vinhl\OneDrive\Desktop\ChromeDrivers\DriverMappingFile.json",
+		"chromedriverExecutableDir": "C:\Users\vinhl\OneDrive\Desktop\ChromeDrivers",
+		}
+	}
+]

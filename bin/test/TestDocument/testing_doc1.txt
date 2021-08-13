@@ -1,0 +1,5 @@
+https://arc-dev.bigin.top/json/template/downloadDocument?template_id=261&document_id=60&type=transferee&transferee_id=50488
+
+
+
+browser.download.useDownloadDir;false
