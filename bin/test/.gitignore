@@ -1,0 +1,11 @@
+/.DS_Store
+/BrowserDrivers/
+/TestData/
+/TestDataParsing/
+/baseClasses/
+/configuration/
+/custom_Func/
+/objects/
+/pages/
+/stepsDefiniton/
+/testcases/

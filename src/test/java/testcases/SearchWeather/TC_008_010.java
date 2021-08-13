@@ -1,36 +1,24 @@
 package testcases.SearchWeather;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
 
-import org.json.simple.JSONObject;
-import org.junit.After;
-import org.junit.AfterClass;
+
+
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
+
 import org.junit.Test;
-import org.junit.runner.RunWith;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import baseClasses.TestBase;
-import configuration.CapacitiesFactory;
-import configuration.DriverConfig.DriverBase;
-import configuration.DriverConfig.DriverCreator;
-import custom_Func.DateTime_Manage;
-import configuration.TestConfigs;
-import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 
-import net.thucydides.core.annotations.Steps;
+import configuration.TestConfigs;
+
 import net.thucydides.core.annotations.Title;
-import net.thucydides.junit.annotations.Concurrent;
-import net.thucydides.junit.annotations.TestData;
-import objects.Response;
+
 import objects.Weather;
 import objects.Location;
-import stepsDefiniton.User_AllSteps;
+
 
 
 
@@ -81,8 +69,6 @@ public class TC_008_010 extends TestBase {
 		
 		city.weather = new Weather("C");
 		
-		Response api_response = new Response();
-				
 		//Steps:
 		//1. Access to the site
 		endUser.access_Site();
