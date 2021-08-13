@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"TC 008 010","TC_008: Verify that the current weather data is returned correctly when user search for the City Name","SUCCESS","2021-08-13T13:32:17.1260312+07:00[Asia/Bangkok]","0.0","31.45"
+"TC 008 010","TC_010:Verify that the daily forecast data is returned correctly for the searched City Name","FAILURE","2021-08-13T14:40:18.801181+07:00[Asia/Bangkok]","0.0","125.92"
