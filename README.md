@@ -53,7 +53,7 @@ The framework core is build based on the Page Object modal. the framework is sep
 * [Step Definition](#step Definition)
 * [Hooks](#hooks)
 
-**### Configuration**:
+### Configuration:
 Having the reader classes reading the `property`, `xml`, `Json` files under directories `src/test/java/configuration`:
 
 * `CapacitiesFactory`: Read the info capacities info
@@ -106,17 +106,21 @@ Examples:
 
   * `QA_TestData.xml`: Store the test `execution environment` info like: (url, login info).
 
-**### PageObject modal**: The classes are located under the src/test/java/pages to interact with Web UI core methods. They extend from the class PageObjects under src/test/java/baseClasses
+### PageObject modal: 
+The classes are located under the src/test/java/pages to interact with Web UI core methods. They extend from the class PageObjects under src/test/java/baseClasses
 
-**### Test Data Driven**: Having class "DataReader" under src/test/java/TestDataParsing/ to read the test data that is used for specific test case.
+### Test Data Driven: 
+Having class "DataReader" under src/test/java/TestDataParsing/ to read the test data that is used for specific test case.
 
 The test data is listed in the file 'data.json' under 'src/test/resource/TestData'
 
-**### Step Definition**: Define classes that is used in the test classes using @Step annotation so that can be read from the Report file as the end user view.
+### Step Definition: 
+Define classes that is used in the test classes using @Step annotation so that can be read from the Report file as the end user view.
 
 All Step Definition classes are located under src/test/java/StepDefinition and extend from the base class `src/test/java/StepsBass.java`
 
-**### Hooks**: Using some main Hooks of `Junit4` and `Serenity` test framework:
+### Hooks: 
+Using some main Hooks of `Junit4` and `Serenity` test framework:
 * @TestData: this `Serenity` annotation is used to create series of browsers based on the `Env_Capacities` files (WebLocal_Caps.json Or WebRemote_Caps.json) so that the test can be run on cross browsers
 * @Before: this `JUnit4` annotation is the Pre-condition that is run before each of `@Test` method
 * @After: this `JUnit4` annotation is the Post-condition that is run after each of `@Test` method
