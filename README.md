@@ -48,9 +48,9 @@ The framework core is build based on the Page Object modal. the framework is sep
 **Main Concepts**: Along with the layers above, some main concepts are included as below:
 
 * [Configuration](#configuration)
-* [PageObject modal](#pageObject modal)
-* [Test Data Driven](#test Data Driven)
-* [Step Definition](#step Definition)
+* [PageObject modal](#PageObject-modal)
+* [Test Data Driven](#Test-Data-Driven)
+* [Step Definition](#Step-Definition)
 * [Hooks](#hooks)
 
 ### Configuration:
