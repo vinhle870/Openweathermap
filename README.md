@@ -47,11 +47,11 @@ The framework core is build based on the Page Object modal. the framework is sep
 
 ### Main Concepts:
 Along with the layers above, some main concepts are included as below:
-* Configuration(#1. Configuration)
-* PageObject modal(2. PageObject modal)
-* Test Data Driven(3. Test Data Driven)
-* Step Definition(4. Step Definition)
-* Hooks(5. Hooks)
+* [Configuration](#1. Configuration)
+* [PageObject modal](#2. PageObject modal)
+* [Test Data Driven](#3. Test Data Driven)
+* [Step Definition](#4. Step Definition)
+* [Hooks](#5. Hooks)
 
 **1. Configuration**:
 Having the reader classes reading the `property`, `xml`, `Json` files under directories `src/test/java/configuration`  :
