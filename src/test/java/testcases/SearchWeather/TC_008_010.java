@@ -7,9 +7,10 @@ import org.junit.Assert;
 import org.junit.Before;
 
 import org.junit.Test;
-
+import org.junit.experimental.categories.Category;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import TestDataParsing.DataReader;
 import baseClasses.TestBase;
 
 import configuration.TestConfigs;
@@ -17,11 +18,12 @@ import configuration.TestConfigs;
 import net.thucydides.core.annotations.Title;
 
 import objects.Weather;
+import testcases.E2E_suite;
 import objects.Location;
 
 
 
-
+@Category(E2E_suite.class)
 public class TC_008_010 extends TestBase {
 	
     //Get driver from parameterized Driver list
@@ -65,7 +67,7 @@ public class TC_008_010 extends TestBase {
 		
 		Location city = new Location();
 		
-		city  = Location.RetrieveLocationFromFile("data.json").get(0);
+		city  = DataReader.RetrieveLocationFromFile("data.json").get(0);
 		
 		city.weather = new Weather("C");
 		
@@ -117,7 +119,7 @@ public class TC_008_010 extends TestBase {
 		
 		Location city = new Location();
 		
-		city  = Location.RetrieveLocationFromFile("data.json").get(0);
+		city  = DataReader.RetrieveLocationFromFile("data.json").get(0);
 		
 		city.weather = new Weather("C");
 		

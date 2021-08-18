@@ -56,7 +56,16 @@
    </build>
   
   <!-- CREATE TEST CATETORIES FOR RUNNING AUTOMATION -->
- 
+ <profiles>
+  	
+	   <profile>
+	   <id>E2E_suite</id>
+	   <properties>
+	       <testcase.groups>Category_E2E</testcase.groups>
+	   </properties>
+	</profile>
+	
+	</profiles>
     <!-- END PROFILES -->
   
   <dependencies>
