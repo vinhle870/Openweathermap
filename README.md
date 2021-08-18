@@ -4,7 +4,7 @@ The Automation framework is built to implement and execute the UI automated test
 
 ## Language/Framework
 
-| **Description** |** Name ** |
+| **Description** | **Name** |
 
 | --------------- | ------------------------------------------------------------------------------------------------- |
 
