@@ -4,9 +4,9 @@ The Automation framework is built to implement and execute the UI automated test
 
 ## Language/Framework
 
-| **Description** |** Name **|
+| **Description** |** Name ** |
 
-| --------------- | -------------------------------------------------------------------------------------------------|
+| --------------- | ------------------------------------------------------------------------------------------------- |
 
 | Project type | Maven |
 
@@ -28,7 +28,7 @@ Via the Capacities config files under resources\configuration\Env_Capacities, th
   * MS Edge
 * Android: default Chrome
 
-##Execution Strategy
+## Execution Strategy
 * **Single Mode** - Test cases is run subsequently
 
 * **Parallel** - Test cases are run concurrently 
@@ -39,7 +39,7 @@ Via the Capacities config files under resources\configuration\Env_Capacities, th
 
 * **CI/CD integration** - The test cases in the CI/CD pipeline of Gitlab service
 
-##Framework Architecture
+## Framework Architecture
 The framework core is build based on the Page Object modal. the framework is separated into 3 main layers
 
 **Layer 1**: Include the core, configuration classes such as:
@@ -52,7 +52,7 @@ The framework core is build based on the Page Object modal. the framework is sep
 
 **Layer 3**: Following the Serenity library and Junit testing framework to design the automated test case that would rather use the Steps Definitions from the Layer 2
 
-###Main Concepts:
+### Main Concepts:
 Along with the layers above, some main concepts are included as below:
 * Configuration
 * PageObject modal
@@ -122,9 +122,9 @@ The test data is listed in the file 'data.json' under 'src/test/resource/TestDat
 
 All Step Definition classes are located under src/test/java/StepDefinition and extend from the base class `src/test/java/StepsBass.java`
 
-##Execution Test Case
+## Execution Test Case
 
-###Single Test mode:
+### Single Test mode:
 
 Run specific test class: `$mvn dest=<testclass> test`.
 
@@ -155,7 +155,7 @@ E.g:
 
 E.g: `mvn test -P E2E_suite`
 
-###Parallel mode:
+### Parallel mode:
 **Run cross different browsers:**
   * Using the `SerenityParameterizedRunner` and `@Concurrent(threads = "10x")` from `TestBase` class
   * Add Browser capacity in the files under `Env_Capacities`.
@@ -192,10 +192,10 @@ mvn test -P <profileID>
 E.g: `mvn test -P E2E_suite`
 
 
-##View Report
+## View Report
 Using `mvn serenity:aggregate` supported by `Serenity-Maven-Plugin` to generate the full report then can view the report under the project directory path: `Openweathermap\SerenityReport\index.html` 
 
-##CI/CD Integration
+## CI/CD Integration
 The Automated testing be included in the CI/CD pipeline so that Version Control System(VCS). Below is an solution so that can trigger running automation test case on Gitlab pipeline – Test phase
 
 * GitRunner is installed in local machine
@@ -227,7 +227,7 @@ test-E2E:
     include: https://github.com/vinhle870/Openweathermap/.gitlab-ci.yml'
 ```
 
-##Distribution Execution
+## Distribution Execution
 The Automated testing be included in Distribution using the [Selenium Grid](https://www.selenium.dev/downloads/).
 Below is an solution so that can trigger running automation test case via Selenium Grid:
 
