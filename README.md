@@ -15,11 +15,11 @@ The Automation framework is built to implement and execute the UI automated test
 
 ## Adaptable Browsers
 Via the Capacities config files under resources\configuration\Env_Capacities, the test case can be run on different browser - platform
-* WIN, MAC OS: 
+* **WIN, MAC OS**: 
   * Chrome
   * Firefox
   * MS Edge
-* Android: default Chrome
+* **Android**: default Chrome
 
 ## Execution Strategy
 * **Single Mode** - Test cases is run subsequently
@@ -47,11 +47,11 @@ The framework core is build based on the Page Object modal. the framework is sep
 
 ### Main Concepts:
 Along with the layers above, some main concepts are included as below:
-* Configuration
-* PageObject modal
-* Test Data Driven
-* Step Definition
-* Hooks
+* Configuration(#1. Configuration)
+* PageObject modal(2. PageObject modal)
+* Test Data Driven(3. Test Data Driven)
+* Step Definition(4. Step Definition)
+* Hooks(5. Hooks)
 
 **1. Configuration**:
 Having the reader classes reading the `property`, `xml`, `Json` files under directories `src/test/java/configuration`  :
@@ -140,7 +140,7 @@ Test cases can also run in test suite:
 
 If needing more suite, the 'suite_name' `interface` must be created under `src/test/java/testcases` before.
 
-* Include profile in the 'pom.xml' file:
+* Include profile in the `pom.xml` file:
   
 E.g:
  
