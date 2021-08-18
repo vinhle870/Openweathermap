@@ -107,17 +107,18 @@ Examples:
   * `QA_TestData.xml`: Store the test `execution environment` info like: (url, login info).
 
 ### PageObject modal: 
-The classes are located under the src/test/java/pages to interact with Web UI core methods. They extend from the class PageObjects under src/test/java/baseClasses
+In Page Object Model, consider each web page of an application as a class file. Each class file will contain only corresponding web page elements.
+The classes are located under the `src/test/java/pages` to interact with Web UI and core methods follow PageObject modal. It is useful in reducing code duplication and improves test case maintenance. They also extend from the class `PageObjects` under `src/test/java/baseClasses`.
+
 
 ### Test Data Driven: 
-Having class "DataReader" under src/test/java/TestDataParsing/ to read the test data that is used for specific test case.
-
-The test data is listed in the file 'data.json' under 'src/test/resource/TestData'
+Having class `DataReader` under `src/test/java/TestDataParsing` to read the data from `data.json` under `src/test/resource/TestData` that is used for specific test case.
 
 ### Step Definition: 
-Define classes that is used in the test classes using @Step annotation so that can be read from the Report file as the end user view.
+Define Step Library classes include method of end use behavior using @Step annotation so that can be read from the Report file.
+All Step Definition classes are located under src/test/java/StepDefinition and extend from the base class `src/test/java/StepsBass.java`.
+The Step Library's methods can be injected to the Test class via `@Steps` instance.
 
-All Step Definition classes are located under src/test/java/StepDefinition and extend from the base class `src/test/java/StepsBass.java`
 
 ### Hooks: 
 Using some main Hooks of `Junit4` and `Serenity` test framework:
