@@ -2,6 +2,18 @@
 
 The Automation framework is built to implement and execute the UI automated tests
 
+Content:
+1. [Language/Framework](#Language/Framework)
+2. [Adaptable Browsers](#Adaptable-Browsers)
+3. [Execution Strategy](#Execution-Strategy)
+4. [Framework Architecture](#Framework-Architecture)
+5. [Execution Test Case](#Execution-Test-Case)
+6. [View Report](#View-Report)
+7. [CI/CD Integration](#CI/CD-Integration)
+8. [Distribution Execution](#Distribution-Execution)
+
+
+
 ## Language/Framework
 
 | **Description** | **Name** |
