@@ -67,8 +67,9 @@ Having the reader classes reading the `property`, `xml`, `Json` files under dire
 Configuration Info files are located under:
 
 * **src/test/resources/configuration/Env_Capacities**: 
-    * `WebLocal_Caps.json`: Specific the browser-platform for local execution.
-    * `WebRemote_Caps.json`: Specific the browser-platform for remote execution.
+
+    * **`WebLocal_Caps.json`**: Specific the browser-platform for local execution.
+    * **`WebRemote_Caps.json`**: Specific the browser-platform for remote execution.
 
 Examples:
 * This is capacities format for the `Win/MAC OS` platform
@@ -102,9 +103,9 @@ Examples:
 ```
 
 * **src/test/resources/configuration/Execution_config**:
-  * `Exec_Config.properties`: Store the global test case configuration file info like: `Execution modal`(local, remote), `Execution Environment`(QA, UAT), `Remote info`(Selenium Grid / Cloud), `headless mode`.
+  * **`Exec_Config.properties`**: Store the global test case configuration file info like: `Execution modal`(local, remote), `Execution Environment`(QA, UAT), `Remote info`(Selenium Grid / Cloud), `headless mode`.
 
-  * `QA_TestData.xml`: Store the test `execution environment` info like: (url, login info).
+  * **`QA_TestData.xml`**: Store the test `execution environment` info like: (url, login info).
 
 ### PageObject modal:
 
