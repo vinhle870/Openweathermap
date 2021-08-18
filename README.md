@@ -171,7 +171,7 @@ Run specific test class: `$mvn dest=<testclass> test`.
 
 Example: `mvn dest=TC_008_010 test`
 
-Test cases can also run in test suite:
+An test case that included in the `Category` can be run via `profile` from `pom.xml`:
 
 * Using `@Category(E2E_suite.class)` in the test class.
 
