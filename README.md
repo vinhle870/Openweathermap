@@ -152,9 +152,8 @@ The Step Library's methods can be injected to the Test class via `@Steps` instan
 
 Using some main Hooks of `Junit4` and `Serenity` test framework:
 
-* @TestData: this `Serenity` annotation is used to create series of browsers based on the `Env_Capacities` files (WebLocal_Caps.json Or WebRemote_Caps.json) so that the test can be run on cross browsers
-* **@Before**: this `JUnit4` annotation is the Pre-condition that is run before each of `@Test` method
-* **@After**: this `JUnit4` annotation is the Post-condition that is run after each of `@Test` method
+* **@Before**: this hook is the Pre-condition that is run before each of `@Test` method
+* **@After**: this hook is the Post-condition that is run after each of `@Test` method
 
 
 
