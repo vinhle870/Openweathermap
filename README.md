@@ -155,11 +155,6 @@ Using some main Hooks of `Junit4` and `Serenity` test framework:
 * @TestData: this `Serenity` annotation is used to create series of browsers based on the `Env_Capacities` files (WebLocal_Caps.json Or WebRemote_Caps.json) so that the test can be run on cross browsers
 * **@Before**: this `JUnit4` annotation is the Pre-condition that is run before each of `@Test` method
 * **@After**: this `JUnit4` annotation is the Post-condition that is run after each of `@Test` method
-* **@Steps**: This `Serenity` annotation tells Serenity to inject the `@Step` step library into the test
-* **@Step**: this `Serenity` hook is Step Library are where we model the behaviour of the end users
-* **@Test**: this `JUnit4` annotation is define a method as the automation test executed and reported 
-* **@Title**: this `Serenity`annotation lets us provide own title for the test in the test reports
-* **@Category**: This `Junit` annotation include the test method or test class into the suite being executed 
 
 
 
